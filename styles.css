@@ -37,43 +37,26 @@ h1 {
 }
 .content {
     display: flex; 
+    flex-direction: column;
+    align-items: center;
 }
 .btn-black {
     background-color: #000000;
     color: #ffffff; 
 }
 .title-text {
-    /* Контролюйте гроші без зайвих зусиль. */
 
-position: static;
-height: 78px;
-top: 200px;
-display: flex;
-margin: auto;
-text-align: center;
 
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 900;
 font-size: 64px;
 line-height: 78px;
-/* identical to box height */
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #000000;
 
 
 }
 .p-text {
     /* Мінімалістичний інструмент для обліку доходів та витрат. Ніяких складних графіків — тільки те, що важливо для вашого гаманця. */
-
-position: relative;
-width: 846px;
-height: 58px;
-left: 537px;
-top: 350px;
 
 font-family: 'Montserrat';
 font-style: normal;
@@ -83,7 +66,6 @@ line-height: 29px;
 display: flex;
 align-items: center;
 text-align: center;
-
 color: #A2A2A2;
 
 

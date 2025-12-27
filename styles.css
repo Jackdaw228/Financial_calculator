@@ -23,7 +23,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 317px;
+    width: 200px;
     height: 63px;
     border-radius: 16px;
     font-weight: 600;
@@ -52,7 +52,8 @@ font-style: normal;
 font-weight: 900;
 font-size: 64px;
 line-height: 78px;
-
+padding: 0 17%;
+text-align: center;
 
 }
 .p-text {
@@ -67,11 +68,27 @@ display: flex;
 align-items: center;
 text-align: center;
 color: #A2A2A2;
-
+padding: 0 19%;
 
 }
 .features-container {
     display: flex;
     justify-content: space-between;
     padding: 40px;
+}
+.start-button p {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 200px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+    transition: opacity 0.3s;
+    background-color: black;
+    margin: 0 auto;
+    cursor: pointer;
 }

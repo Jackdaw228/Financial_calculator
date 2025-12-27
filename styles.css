@@ -12,7 +12,7 @@ h1 {
 }
 .header {
     background-color: #648A73;
-    height: 150px;
+    height: 130px;
     display: flex;
     align-items: center; 
     justify-content: space-between; 
@@ -83,6 +83,22 @@ padding: 0 19%;
     justify-content: center;
     width: 1000px;
     height: 200px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+    transition: opacity 0.3s;
+    background-color: black;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.button-on-calculator {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
     border-radius: 20px;
     font-weight: 600;
     font-size: 32px;

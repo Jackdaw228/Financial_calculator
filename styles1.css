@@ -147,14 +147,14 @@ padding: 0 19%;
 .main-container {
     display: flex;
     gap: 100px;
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 40px auto;
 }
 .forms-section {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    flex: 1;
+    gap: 40px;
+    flex: 1.2;
 }
 .form-group {
     display: flex;
@@ -187,11 +187,17 @@ padding: 0 19%;
 }
 input {
     border: 1px solid #999;
-    border-radius: 15px;
+    border-radius: 12px;
     padding: 12px 15px;
     font-size: 16px;
-    width: 140px;
     outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+#income-amount, #expense-amount {
+    width: 100px; 
+}
+#income-description, #expense-description {
+    width: 250px; 
 }
 input::placeholder {
     color: #a8a8a8;
@@ -220,12 +226,14 @@ input::placeholder {
 }
 .history-section {
     flex: 1;
+    border-left: 1px solid #eee; 
+    padding-left: 40px;
 }
 
 .history-section h3 {
-    font-size: 24px;
-    font-weight: 800;
-    margin-bottom: 20px;
+    margin-top: 0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
 }
 
 .transaction-list {
@@ -238,8 +246,8 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 0;
-    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .transaction-list li .info {

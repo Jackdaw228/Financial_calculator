@@ -1,15 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
+    <div class="header-on-calculator">
         <h1>Бюджетний контроль</h1>
         <a href="/" class="button-on-calculator">Головна сторінка</a>
     </div>
+    <div class="dashboard">
+        <div class="card">
+            <h2>Доходи</h2>
+            <p class="value income" id="total-income">0 ₴</p>
+        </div>
+        <div class="card">
+            <h2>Витрати</h2>
+            <p class="value expense" id="total-expense">0 ₴</p>
+        </div>
+        <div class="card dark">
+            <h2>Залишок</h2>
+            <p class="value balance" id="total-balance">0 ₴</p>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="forms-section">
+            <div class="form-group">
+                <h2 class="title income-title"><span class="dot green"></span>Доходи</h2>
+                <div class="input">
+                    <input type="number" id="income-amount" placeholder="Сума">
+                    <input type="text" id="income-description" placeholder="Опис доходу">
+                    <button class="button green-button" onclick="addTransaction('income')">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <h2 class="title expense-title"><span class="dot red"></span>Витрати</h2>
+                <div class="input">
+                    <input type="number" id="expense-amount" placeholder="Сума">
+                    <input type="text" id="expense-description" placeholder="Опис витрати">
+                    <button class="button red-button" onclick="addTransaction('expense')">-</button>
+                </div>
+            </div>
+        </div>
+
+    <div class="history-section">
+        <h3>Історія транзакцій</h3>
+        <ul id="history-list" class="transaction-list">
+            </ul>
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

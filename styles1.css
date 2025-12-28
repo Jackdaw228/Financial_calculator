@@ -92,3 +92,182 @@ padding: 0 19%;
     margin: 0 auto;
     cursor: pointer;
 }
+.button-on-calculator {
+    background-color: #000000;
+    color: #ffffff; 
+    border: 30px solid #000000;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 0 0 0 22%;
+    width: 350px;
+    text-align: center;
+}
+.header-on-calculator {
+    background-color: #648A73;
+    height: 100px;
+    display: flex;
+    align-items: center; 
+    padding: 0 20px;
+    height: 120px;
+}
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    gap: 20px
+}
+.card {
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px 50px 50px 50px;
+    width: 350px;
+    border-radius: 16px;
+}
+.card.dark {
+    background-color: #000000;
+    color: white;
+}
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.value {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+.value.income {
+    color: #4CAF50;
+}
+.value.expense {
+    color: #F44336;
+}
+.main-container {
+    display: flex;
+    gap: 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.forms-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 0;
+}
+.dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.dot.green {
+    background-color: #4CAF50;
+}
+.dot.red {
+    background-color: #F44336;
+}
+.input {
+    display: flex;
+    gap: 10px;
+}
+input {
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: 12px 15px;
+    font-size: 16px;
+    width: 140px;
+    outline: none;
+}
+input::placeholder {
+    color: #a8a8a8;
+}
+.button {
+    border: none;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+.button.green-button {
+    background-color: #4CAF50;
+}
+.button.red-button {
+    background-color: #F44336;
+}
+.button:hover {
+    opacity: 0.8;
+}
+.history-section {
+    flex: 1;
+}
+
+.history-section h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.transaction-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.transaction-list li .info {
+    font-weight: 700;
+}
+
+.transaction-list li .info span {
+    color: #ccc;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.transaction-list li .amount-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.amount-text {
+    font-weight: 700;
+}
+
+.amount-text.income { color: #2ecc71; }
+.amount-text.expense { color: #c0392b; }
+
+.delete-btn {
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+}

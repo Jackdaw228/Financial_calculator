@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* Використовуємо фонове зображення як на скріншоті */
+    background: url("https://i.postimg.cc/Kc5kqnWH/1641866452-32-abrakadabra-fun-p-zastavka-vindovs-pole-42.jpg")
+     no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 50px; /* Зміщення вліво як на картинці */
+}
+
+.login-container {
+    background: rgba(136, 172, 142, 0.85); /* Зеленкуватий напівпрозорий колір */
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px); /* Ефект розмиття фону за формою */
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 32px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #000;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #555;
+    z-index: 1;
+}
+
+.divider span {
+    background: #a9c5ad; /* Під колір фону панелі */
+    padding: 0 10px;
+    position: relative;
+    z-index: 2;
+    font-size: 12px;
+    color: #444;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.icon-box {
+    width: 60px;
+    height: 45px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+.icon-box-purple{
+    width: 60px;
+    height: 45px;
+    background: url("https://i.postimg.cc/zvDzC7cz/unnamed-(1)-(1).png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+.icon-box-white-border{
+    width: 60px;
+    height: 45px;
+    background: url("https://i.postimg.cc/wTH8wNNp/unnamed-(2).png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+.icon-box-army{
+    width: 60px;
+    height: 45px;
+    background: url("https://i.postimg.cc/V6rBY9RW/png-transparent-telegram-2019-hd-logo.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+.icon-box-diia {
+    width: 60px;
+    height: 45px;
+    background: url("https://i.postimg.cc/SKjfqgBx/R.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}

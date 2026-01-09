@@ -16,7 +16,7 @@ function addTransaction(type) {
     let amount = Number(amountInput.value);
     let description = descriptionInput.value;
 
-    if (amountInput.value === '' || description === '' || amount <= 0) {
+    if (amountInput.value == '' || description == '' || amount <= 0) {
         alert("Будь ласка, введіть коректну суму та опис.");
         return;
     }
@@ -24,7 +24,7 @@ function addTransaction(type) {
     let categoryText;
     let amountClass;
 
-    if (type === 'income') {
+    if (type == 'income') {
         categoryText = '(дохід)';
         amountClass = 'income';
         totalIncome += amount;

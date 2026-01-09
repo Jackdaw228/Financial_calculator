@@ -11,7 +11,7 @@ h1 {
     margin: 0;
 }
 .header {
-    background-color: #648A73;
+    background: linear-gradient(135deg, #648A73 0%, #41b670 100%);
     height: 150px;
     display: flex;
     align-items: center; 
@@ -23,7 +23,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 250px;
     height: 63px;
     border-radius: 16px;
     font-weight: 600;
@@ -76,7 +76,7 @@ padding: 0 19%;
     justify-content: space-between;
     padding: 40px;
 }
-.start-button p {
+.start-button a {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -91,6 +91,7 @@ padding: 0 19%;
     background-color: black;
     margin: 0 auto;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 .button-on-calculator {
     background-color: #000000;
@@ -105,7 +106,7 @@ padding: 0 19%;
     font-size: 25px;
 }
 .header-on-calculator {
-    background-color: #648A73;
+    background: linear-gradient(135deg, #648A73 0%, #41b670 100%);
     display: flex;
     align-items: center; 
     padding: 0 20px;
@@ -374,4 +375,165 @@ input::placeholder {
     color: black;
     border-radius: 50%;
     object-fit: cover; 
+}
+.main-container-on-page-3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 60px 20px;
+    gap: 40px; 
+}
+
+.btn.btn-green.btn-golovna {
+    font-size: 20px;
+}
+.main-container-on-page-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 60px 20px;
+    gap: 0; 
+    min-height: calc(100vh - 150px);
+}
+
+.contact-container {
+    background: #fff;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.info-section {
+    background: linear-gradient(135deg, #648A73 0%, #41b670 100%);
+    color: white;
+    padding: 60px 40px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-bottom: 5px;
+}
+.info-section h2 { 
+    font-size: 32px; 
+    margin-bottom: 15px; 
+    font-weight: 700;
+}
+
+.info-section .subtitle { 
+    opacity: 0.9; 
+    margin-bottom: 50px; 
+    line-height: 1.6; 
+    font-size: 16px;
+}
+
+.contact-details .item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-details .item i {
+    background: rgba(255, 255, 255, 0.2);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 22px;
+    margin-right: 20px;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.social-icons a:hover { 
+    opacity: 1; 
+    transform: translateY(-2px); 
+}
+
+.form-section {
+    padding: 60px 50px;
+    width: 65%;
+    background: white;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contact-form {
+    flex: 1;
+    padding: 60px 50px;
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+
+input, textarea {
+    background: #ffffff;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+.submit-btn {
+    background: #648A73; /* Тьмяно-зелений колір з картинки */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.submit-btn i {
+    width: 20px;
+    height: 20px;
+}
+.hidden {
+    display: none;
 }

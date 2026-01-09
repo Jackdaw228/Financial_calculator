@@ -23,7 +23,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 300px;
     height: 63px;
     border-radius: 16px;
     font-weight: 600;
@@ -97,14 +97,15 @@ padding: 0 19%;
     color: #ffffff; 
     border: 30px solid #000000;
     border-radius: 20px;
+    font-weight: 1000;
     text-decoration: none;
     margin: 0 0 0 22%;
     width: 350px;
     text-align: center;
+    font-size: 25px;
 }
 .header-on-calculator {
     background-color: #648A73;
-    height: 100px;
     display: flex;
     align-items: center; 
     padding: 0 20px;
@@ -278,4 +279,99 @@ input::placeholder {
     cursor: pointer;
     font-weight: bold;
     color: #000;
+}
+.btn.btn-green.page-3 {
+    background-color: #A9E6C1;
+    color: black;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+}
+.h1-on-page-3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+    padding-top: 50px;
+}
+.p-on-page-3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #A2A2A2;
+    padding: 0 28%;
+}
+.btn-on-vidgyki {
+    background-color: #A9E6C1;
+    color: black;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+}
+.title-text-on-vidgyki {
+    text-align: center;
+}
+.title-text-on-vidgyki h1 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 78px;
+    color: #000000;
+    margin: 0;
+}
+.title-text-on-vidgyki p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    align-items: center;
+    text-align: center;
+    color: #A2A2A2;
+    padding: 0 25% 100px;
+    margin: 0;
+}
+.all-card {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.rewiew-cards{
+    background-color: #000;
+    color: white;
+    padding: 30px;
+    border-radius: 30px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+.rating-stars svg {
+    width: 24px;
+    height: 24px;
+    stroke: #ffcc00; 
+    stroke-width: 2px;
+    fill: #ffcc00; 
+    margin-right: 4px;
+}
+.user-info {
+    margin-top: auto;       
+    display: flex;
+    align-items: center;    
+    gap: 12px;              
+    padding-top: 20px;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    object-fit: cover; 
 }

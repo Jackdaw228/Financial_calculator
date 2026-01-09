@@ -40,7 +40,7 @@
             btn.addEventListener('click', (e) => {
                 e.preventDefault(); 
                 let isAuth = localStorage.getItem('isRegistered');
-                if (isAuth === 'true') {
+                if (isAuth == 'true') {
                     console.log('User is registered');
                     window.location.href = 'calculator.html';
                 } else {

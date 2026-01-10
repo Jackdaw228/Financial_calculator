@@ -67,17 +67,25 @@
     </script>
     <script>
         lucide.createIcons();
-        const form = document.getElementById('contact-form');
-const formMessage = document.getElementById('form-message');
+        let form = document.getElementById('contact-form');
+let formMessage = document.getElementById('form-message');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const subject = document.getElementById('subject').value.trim();
-    const message = document.getElementById('message').value.trim();
+    let name = document.getElementById('name').value.trim();
+    let email = document.getElementById('email').value.trim();
+    let subject = document.getElementById('subject').value.trim();
+    let message = document.getElementById('message').value.trim();
     if (!name || !email || !subject || !message) {
         showMessage('Будь ласка, заповніть всі поля', 'error');
+        return;
+    }
+    if (/\d/.test(name)) {
+            showMessage('Ім’я не повинно містити цифр', 'error');
+            return;
+        }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showMessage('Введіть корректний email', 'error');
         return;
     }
     showMessage('Дякуємо! Повідомлення успішно надіслано 😊', 'success');

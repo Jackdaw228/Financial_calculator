@@ -84,6 +84,10 @@ form.addEventListener('submit', (e) => {
             showMessage('Ім’я не повинно містити цифр', 'error');
             return;
         }
+    if (/\d/.test(subject)) {
+            showMessage('Тема не повинна містити цифр', 'error');
+            return;
+        }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         showMessage('Введіть корректний email', 'error');
         return;

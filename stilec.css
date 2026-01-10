@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -14,11 +15,13 @@ body {
     display: flex;
     align-items: center;
     padding-left: 50px; /* Зміщення вліво як на картинці */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .login-container {
     background: rgba(136, 172, 142, 0.85); /* Зеленкуватий напівпрозорий колір */
     padding: 40px;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 20px;
     width: 400px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -167,4 +170,51 @@ h1 {
     cursor: pointer;
     font-weight: bold;
     font-size: 12px;
+}
+#form-message {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    display: none;
+    font-size: 14px;
+}
+
+#form-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    max-width: 300px;
+    padding: 14px 18px;
+    border-radius: 10px;
+
+    font-size: 14px;
+    display: none;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+}
+
+#form-message.error {
+    background-color: #ffe5e5;
+    color: #a80000;
+}
+
+#form-message.success {
+    background-color: #e6ffef;
+    color: #006b3c;
+}
+#form-message {
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: black;
+    margin: 0;
+}
+.header {
+    background: linear-gradient(135deg, #648A73 0%, #41b670 100%);
+    height: 150px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 20px;
+}
+.btn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 63px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+    transition: opacity 0.3s;
+}
+
+.btn-green {
+    background-color: #88BC9C;
+}
+.content {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.btn-black {
+    background-color: #000000;
+    color: #ffffff; 
+}
+.title-text {
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 78px;
+padding: 0 17%;
+text-align: center;
+
+}
+.p-text {
+    /* Мінімалістичний інструмент для обліку доходів та витрат. Ніяких складних графіків — тільки те, що важливо для вашого гаманця. */
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #A2A2A2;
+padding: 0 19%;
+
+}
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.start-button a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 200px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+    transition: opacity 0.3s;
+    background-color: black;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.button-on-calculator {
+    background-color: #000000;
+    color: #ffffff; 
+    border: 30px solid #000000;
+    border-radius: 20px;
+    font-weight: 1000;
+    text-decoration: none;
+    margin: 0 0 0 22%;
+    width: 350px;
+    text-align: center;
+    font-size: 25px;
+}
+.header-on-calculator {
+    background: linear-gradient(135deg, #648A73 0%, #41b670 100%);
+    display: flex;
+    align-items: center; 
+    padding: 0 20px;
+    height: 120px;
+}
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    gap: 20px
+}
+.card {
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px 50px 50px 50px;
+    width: 350px;
+    border-radius: 16px;
+}
+.card.dark {
+    background-color: #000000;
+    color: white;
+}
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.value {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+.value.income {
+    color: #4CAF50;
+}
+.value.expense {
+    color: #F44336;
+}
+.main-container {
+    display: flex;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.forms-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1.2;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 0;
+}
+.dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.dot.green {
+    background-color: #4CAF50;
+}
+.dot.red {
+    background-color: #F44336;
+}
+.input {
+    display: flex;
+    gap: 10px;
+}
+input {
+    border: 1px solid #999;
+    border-radius: 12px;
+    padding: 12px 15px;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+#income-amount, #expense-amount {
+    width: 100px; 
+}
+#income-description, #expense-description {
+    width: 250px; 
+}
+input::placeholder {
+    color: #a8a8a8;
+}
+.button {
+    border: none;
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+.button.green-button {
+    background-color: #4CAF50;
+}
+.button.red-button {
+    background-color: #F44336;
+}
+.button:hover {
+    opacity: 0.8;
+}
+.history-section {
+    flex: 1;
+    border-left: 1px solid #eee; 
+    padding-left: 40px;
+}
+
+.history-section h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.transaction-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.transaction-list li .info {
+    font-weight: 700;
+}
+
+.transaction-list li .info span {
+    color: #ccc;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.transaction-list li .amount-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.amount-text {
+    font-weight: 700;
+}
+
+.amount-text.income { color: #2ecc71; }
+.amount-text.expense { color: #c0392b; }
+
+.delete-btn {
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+}
+.btn.btn-green.page-3 {
+    background-color: #A9E6C1;
+    color: black;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+}
+.h1-on-page-3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+    padding-top: 50px;
+}
+.p-on-page-3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #A2A2A2;
+    padding: 0 28%;
+}
+.btn-on-vidgyki {
+    background-color: #A9E6C1;
+    color: black;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+}
+.title-text-on-vidgyki {
+    text-align: center;
+}
+.title-text-on-vidgyki h1 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 78px;
+    color: #000000;
+    margin: 0;
+}
+.title-text-on-vidgyki p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    align-items: center;
+    text-align: center;
+    color: #A2A2A2;
+    padding: 0 25% 100px;
+    margin: 0;
+}
+.all-card {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.rewiew-cards{
+    background-color: #000;
+    color: white;
+    padding: 30px;
+    border-radius: 30px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+.rating-stars svg {
+    width: 24px;
+    height: 24px;
+    stroke: #ffcc00; 
+    stroke-width: 2px;
+    fill: #ffcc00; 
+    margin-right: 4px;
+}
+.user-info {
+    margin-top: auto;       
+    display: flex;
+    align-items: center;    
+    gap: 12px;              
+    padding-top: 20px;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+.main-container-on-page-3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 60px 20px;
+    gap: 40px; 
+}
+
+.btn.btn-green.btn-golovna {
+    font-size: 20px;
+}
+.main-container-on-page-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 60px 20px;
+    gap: 0; 
+    min-height: calc(100vh - 150px);
+}
+
+.contact-container {
+    background: #fff;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.info-section {
+    background: linear-gradient(135deg, #648A73 0%, #41b670 100%);
+    color: white;
+    padding: 60px 40px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-bottom: 5px;
+}
+.info-section h2 { 
+    font-size: 32px; 
+    margin-bottom: 15px; 
+    font-weight: 700;
+}
+
+.info-section .subtitle { 
+    opacity: 0.9; 
+    margin-bottom: 50px; 
+    line-height: 1.6; 
+    font-size: 16px;
+}
+
+.contact-details .item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-details .item i {
+    background: rgba(255, 255, 255, 0.2);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 22px;
+    margin-right: 20px;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.social-icons a:hover { 
+    opacity: 1; 
+    transform: translateY(-2px); 
+}
+
+.form-section {
+    padding: 60px 50px;
+    width: 65%;
+    background: white;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contact-form {
+    flex: 1;
+    padding: 60px 50px;
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+
+input, textarea {
+    background: #ffffff;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+.submit-btn {
+    background: #648A73; /* Тьмяно-зелений колір з картинки */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.submit-btn i {
+    width: 20px;
+    height: 20px;
+}
+#form-message {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    display: none;
+    font-size: 14px;
+}
+
+#form-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    max-width: 300px;
+    padding: 14px 18px;
+    border-radius: 10px;
+
+    font-size: 14px;
+    display: none;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+}
+
+#form-message.error {
+    background-color: #ffe5e5;
+    color: #a80000;
+}
+
+#form-message.success {
+    background-color: #e6ffef;
+    color: #006b3c;
+}
+#form-message {
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

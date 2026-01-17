@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Бюджетний контроль</h1>
+        <a href="/" class="btn btn-green btn-golovna">Головна сторінка</a>
+        <a href="/vidgyki.html" class="btn btn-green">Відгуки</a>
+        <a href="/pro_nas.html" class="btn btn-green page-3">Контакти</a>
+        <a href="/calculator.html" class="btn btn-black">Кабінет</a>
+    </div>
+    <div class="main-container-on-page-3">
+        <div class="info-section">
+            <h2>Зв'яжіться з нами</h2>
+            <p class="subtitle">Заповніть форму, і наша команда відповість вам протягом 24 годин.</p>
+            <div class="contact-details">
+                <div class="item">
+                    <i data-lucide="phone"></i>
+                    <span>+381 48 867 42 52</span>
+                </div>
+                <div class="item">
+                    <i data-lucide="mail"></i>
+                    <span>help@budgetcontrol.com</span>
+                </div>
+                <div class="item">
+                    <i data-lucide="map-pin"></i>
+                    <span>вул. Фінансова, 15, Київ, Україна</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="facebook" data-lucide="facebook"></i></a>
+                <a href="#"><i class="twitter" data-lucide="twitter"></i></a>
+                <a href="#"><i class="instagram" data-lucide="instagram"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="#" id="contact-form" class="form-inner">
+                <div class="label">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" placeholder="Іванов">
+                </div>
+                <div class="label">
+                    <label for="email">Пошта</label>
+                    <input type="email" id="email" placeholder="example@mail.com">
+                </div>
+                <div class="label">
+                    <label>Тема</label>
+                    <input type="text" id="subject" placeholder="Співпраця">
+                </div>
+                <div class="label">
+                    <label>Повідомлення</label>
+                    <textarea id="message" placeholder="Тема" rows="5"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    Відправити <i data-lucide="send"></i>
+                </button>
+            </form>
+            <div id="form-message"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest">
+    </script>
+    <script>
+        lucide.createIcons();
+        let form = document.getElementById('contact-form');
+let formMessage = document.getElementById('form-message');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let name = document.getElementById('name').value.trim();
+    let email = document.getElementById('email').value.trim();
+    let subject = document.getElementById('subject').value.trim();
+    let message = document.getElementById('message').value.trim();
+    if (!name || !email || !subject || !message) {
+        showMessage('Будь ласка, заповніть всі поля', 'error');
+        return;
+    }
+    if (/\d/.test(name)) {
+            showMessage('Ім’я не повинно містити цифр', 'error');
+            return;
+        }
+    if (/\d/.test(subject)) {
+            showMessage('Тема не повинна містити цифр', 'error');
+            return;
+        }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showMessage('Введіть корректний email', 'error');
+        return;
+    }
+    showMessage('Дякуємо! Повідомлення успішно надіслано 😊', 'success');
+    form.reset();
+});
+function showMessage(text, type) {
+    formMessage.textContent = text;
+    formMessage.className = type;
+    formMessage.style.display = 'block';
+    setTimeout(() => {
+        formMessage.style.display = 'none';
+    }, 4000);
+}
+    </script>
+</body>
+</html>

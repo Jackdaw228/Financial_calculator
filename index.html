@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Головна сторінка</title>
 </head>
 <body>
     <div class="header">
         <h1>Бюджетний контроль</h1>
-        <a href="/" class="btn btn-green">Відгуки</a>
-        <a href="/" class="btn btn-green">Контакти</a>
-        <a href="/" class="btn btn-green">Про нас</a>
-        <a href="/" class="btn btn-black">Кабінет</a>
+        <a href="/vidgyki.html" class="btn btn-green">Відгуки</a>
+        <a href="/pro_nas.html" class="btn btn-green">Контакти</a>
+        <a href="#" class="btn btn-black ActionButtonId">Кабінет</a>
     </div>
     <div class="content">
         <h2 class="title-text">Контролюйте гроші без зайвих зусиль.</h2>
@@ -32,5 +31,24 @@
             <p>Ваші дані автоматично синхронізуються між пристроями, щоб ви завжди мали доступ до актуальної інформації.</p>
         </div>
     </div>
+    <div class="start-button" id="ActionButtonId">
+        <a href="#" class="ActionButtonId">Почати роботу</a>
+    </div>
+    <script>
+        let mainBtns = document.querySelectorAll('.ActionButtonId'); 
+        mainBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault(); 
+                let isAuth = localStorage.getItem('isRegistered');
+                if (isAuth == 'true') {
+                    console.log('User is registered');
+                    window.location.href = 'calculator.html';
+                } else {
+                    console.log('User is not registered');
+                    window.location.href = 'register.html'; 
+                }
+            });
+        });
+    </script>
 </body>
 </html>

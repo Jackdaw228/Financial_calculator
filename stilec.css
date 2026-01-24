@@ -218,3 +218,16 @@ h1 {
         transform: translateY(0);
     }
 }
+@media (max-width: 400px) {
+
+  /* ===== ОБЩЕЕ ===== */
+  body {
+    font-size: 14px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .login-container{
+    margin-right: 49px;
+  }
+}

@@ -581,3 +581,139 @@ textarea {
         transform: translateY(0);
     }
 }
+
+@media (max-width: 400px) {
+
+  /* ===== ОБЩЕЕ ===== */
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  /* ===== ХЕДЕР ===== */
+  .header,
+  .header-on-calculator {
+    height: auto;
+    padding: 12px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  /* ===== КНОПКИ (все основные) ===== */
+  /* он потеет */
+  .btn,
+  .btn-green,
+  .btn-black,
+  .btn-on-vidgyki,
+  .btn.btn-green.page-3 {
+    width: 90%;
+    height: auto;
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .start-button a {
+    width: 80%;
+    height: auto;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .button-on-calculator {
+    width: 90%;
+    margin: 20px 0;
+    font-size: 18px;
+    border-width: 15px;
+  }
+
+  /* ===== ТЕКСТ НА ГЛАВНОЙ ===== */
+  .title-text {
+    font-size: 28px;
+    line-height: 34px;
+    padding: 0 10px;
+  }
+
+  .p-text {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  /* ===== КАРТОЧКИ ===== */
+  .features-container,
+  .dashboard {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    gap: 20px;
+  }
+    .all-card {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+    gap: 20px;
+  }
+
+  .card,
+  .rewiew-cards {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* ===== ФОРМЫ ===== */
+  .main-container,
+  .main-container-on-page-3 {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 10px;
+  }
+
+  .history-section {
+    border-left: none;
+    margin-right: 30px;
+  }
+
+  .input {
+    flex-direction: column;
+  }
+
+  #income-amount,
+  #expense-amount,
+  #income-description,
+  #expense-description {
+    width: 100%;
+  }
+
+  /* ===== CONTACT PAGE ===== */
+  .contact-container {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .info-section,
+  .form-section {
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 0;
+  }
+
+  /* ===== УВЕДОМЛЕНИЕ ===== */
+  #form-message {
+    right: 10px;
+    left: 10px;
+    max-width: unset;
+  }
+
+}
+
+

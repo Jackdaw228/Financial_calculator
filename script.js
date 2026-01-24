@@ -7,7 +7,7 @@ let showMessage = (text, type) => {
     formMessage.style.display = 'block';
     setTimeout(() => {
         formMessage.style.display = 'none';
-    }, 3500);
+    }, 3000);
 };
 let totalIncome = 0;
 let totalExpense = 0;
